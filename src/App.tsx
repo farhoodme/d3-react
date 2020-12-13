@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import './App.css';
 import data from './data.json';
 
-const groupBy = (array) => {
+const processData = (array) => {
   const years = array.reduce((result, currentValue) => {
     (result).push(
       {
@@ -20,8 +20,6 @@ const groupBy = (array) => {
   }, []);
 
   console.log(JSON.stringify(years));
-
-  //return years;
 };
 
 function App() {
